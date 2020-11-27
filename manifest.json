@@ -1,0 +1,15 @@
+{
+    "name":"Food Recipie",
+    "short_name": "FoodRecipie",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#FFE9D2",
+    "theme_color": "#FFE1C4",
+    "orientation": "portrait-primary",
+
+    "icon": [
+        {
+            "src": "./img/Icon.png"
+        }
+    ]
+}
