@@ -1,9 +1,8 @@
 const staticCacheName = 'site-static'; //Change this line with every new version
+const dynamicCacheName = 'site-dynamic-v1';
 const assets = [
   '/',
   '/index.html',
-  '/pages/about.html',
-  '/pages/contact.html',
   '/js/app.js',
   '/js/ui.js',
   '/js/materialize.min.js',
@@ -46,7 +45,12 @@ self.addEventListener('fetch', evt => {
   //console.log('fetch event', evt);
   evt.respondWith(
     caches.match(evt.request).then(cacheRes => {
-      return cacheRes || fetch(evt.request);
+      return cacheRes || fetch(evt.request).then(fetchRes => {
+        return caches.open(dynamicCacheName).then(cache => {
+          cache.put(evt.request.url, fetchRes.clone());
+          return fetchRes;
+        })
+      });
     })
   );
 });
