@@ -16,6 +16,13 @@ ToBe-ToDo is an efficient task management system and project management Progress
 
 ![2](https://user-images.githubusercontent.com/58937669/101275218-f4cd9500-37c9-11eb-89b9-816c229b3bc7.JPG)
 
+# Stack used in the project:
+
+**ToBe-ToDo app made from :**
+ * **JS**
+ * **Firebase**
+ * **Service Workers**
+
 
 ## Bugs & Feature Requests
 
