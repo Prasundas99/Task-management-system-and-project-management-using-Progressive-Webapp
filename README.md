@@ -1,7 +1,7 @@
 # ToBe-ToDo 
 
 ## Demo
-Demo: https://tutorial-8017f.web.app/pages/about.html
+Demo: https://tutorial-8017f.web.app/
 
 ## About
 ToBe-ToDo is an efficient task management system and project management Progressive  Webapp
